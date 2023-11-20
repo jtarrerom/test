@@ -1,0 +1,16 @@
+const galleryContainer = document.getElementById('gallery');
+
+// Reemplaza estas URL con las URLs reales de tus imágenes
+const imageUrls = [
+    'URL_IMAGEN_1',
+    'URL_IMAGEN_2',
+    'URL_IMAGEN_3',
+    // Agrega más URLs según sea necesario
+];
+
+imageUrls.forEach((imageUrl, index) => {
+    const imgElement = document.createElement('img');
+    imgElement.src = imageUrl;
+    imgElement.alt = `Imagen ${index + 1}`;
+    galleryContainer.appendChild(imgElement);
+});
